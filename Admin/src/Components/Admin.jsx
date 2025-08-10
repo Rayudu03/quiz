@@ -52,7 +52,7 @@ function Admin() {
 
     
     useEffect(()=>{
-        socket.current = io('http://localhost:5000');
+        socket.current = io('https://quiz-iwlj.onrender.com');
         socket.current.on('connect',()=>{
             console.log('Admin connected'+socket.current.id);
         });
