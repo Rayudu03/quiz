@@ -13,7 +13,7 @@ function LeaderBoard() {
   const[collection,setCollection]  = useState([]);
 
   useEffect(()=>{
-    socket.current = io('https://quiz-admin-gr40.onrender.com');
+    socket.current = io('https://quiz-backend-oe2l.onrender.com');
     socket.current.on('connect',()=>{
       console.log('Main screen '+socket.current.id);
     });
