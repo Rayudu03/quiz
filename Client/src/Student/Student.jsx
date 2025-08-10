@@ -14,7 +14,7 @@ function Student() {
   const [hasSubmitted, setHasSubmitted] = useState(false);
 
   useEffect(() => {
-    socket.current = io('https://quiz-admin-gr40.onrender.com');
+    socket.current = io('https://quiz-backend-oe2l.onrender.com');
 
     socket.current.on('connect', () => {
       console.log(" Student connected:", socket.current.id);
