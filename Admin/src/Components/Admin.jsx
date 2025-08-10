@@ -52,7 +52,7 @@ function Admin() {
 
     
     useEffect(()=>{
-        socket.current = io('https://quiz-backend-gnu1.onrender.com');
+        socket.current = io('https://quiz-backend-oe2l.onrender.com');
         socket.current.on('connect',()=>{
             console.log('Admin connected'+socket.current.id);
         });
